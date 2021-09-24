@@ -1,0 +1,15 @@
+// header to style
+
+.header-top {
+	background: rgb(121, 81, 81);
+	padding: 10px 60px;
+	.header-widget {
+		display: flex;
+		justify-content: end;
+		align-items: center;
+	}
+}
+
+.main-header {
+	padding: 0 60px;
+}

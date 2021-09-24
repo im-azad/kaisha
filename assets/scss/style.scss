@@ -1,0 +1,50 @@
+/* ===================================
+Project Name 	:   
+File 			:  CSS Base
+Version 		:  1.0;
+Author 			:  
+Developer:		:  
+
+=====================================*/
+
+/* ==================================
+CSS table Of content
+
+    01. Base style
+    02. Typography style
+
+=====================================*/
+
+@import 'helpers/variables';
+
+@import 'helpers/breakpoints';
+
+/* ----------------
+    01. Reset/normalize
+-------------------*/
+@import 'base/reset';
+
+/* ----------------
+    01. Base style
+-------------------*/
+@import 'base/base';
+
+/* ---------------
+    02. Typography style
+ ------------------*/
+@import 'base/typography';
+
+/* ---------------
+     02. Buttons style
+ ------------------*/
+@import 'components/buttons';
+
+/* ---------------
+     03. Header style
+ ------------------*/
+@import 'layout/header';
+
+// /* ---------------
+//     04. Slider style
+// ------------------*/
+// @import "layout/slider";
