@@ -160,11 +160,10 @@ h6 {
      03. Header style
  ------------------*/
 .header-top {
-  background: #795151;
   padding: 10px 60px;
 }
 
-.header-top .header-widget {
+.header-top .header-widget ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -176,7 +175,12 @@ h6 {
           align-items: center;
 }
 
+.header-top .header-widget ul li + li {
+  margin-left: 50px;
+}
+
 .main-header {
   padding: 0 60px;
+  background: #e37706;
 }
 /*# sourceMappingURL=style.css.map */
