@@ -13,6 +13,14 @@ CSS table Of content
     02. Typography style
 
 =====================================*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+:root {
+  --poppinsFont: 'Poppins', sans-serif;
+  --themeColor: #e37706;
+  --textColor: #1a1a1a;
+  --white: #ffffff;
+}
+
 /* ----------------
     01. Reset/normalize
 -------------------*/
@@ -75,7 +83,6 @@ a:not([class]) {
 
 /* Make images easier to work with */
 img {
-  max-width: 100%;
   display: block;
 }
 
@@ -117,6 +124,7 @@ html,
 body {
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
 }
 
 a {
@@ -138,9 +146,11 @@ ul {
 /* ---------------
     02. Typography style
  ------------------*/
-body {
-  font-family: 'Raleway', sans-serif;
+body,
+html {
+  font-family: var(--poppinsFont);
   font-weight: 400;
+  color: var(--textColor);
 }
 
 h1,
@@ -149,13 +159,51 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 700;
+  font-family: var(--poppinsFont);
+  font-weight: 600;
+}
+
+a {
+  color: inherit;
+}
+
+a:hover {
+  color: inherit;
 }
 
 /* ---------------
      02. Buttons style
  ------------------*/
+.btn {
+  height: 50px;
+  line-height: 50px;
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--white);
+  background: var(--themeColor);
+  padding: 0 30px;
+  border-radius: 0;
+  border: 2px solid var(--themeColor);
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.btn:hover {
+  color: var(--themeColor);
+  background: transparent;
+}
+
+.btn.btn-white {
+  background: var(--white);
+  color: var(--themeColor);
+  border-radius: 6px;
+}
+
+.btn.btn-round {
+  border-radius: 40px;
+}
+
 /* ---------------
      03. Header style
  ------------------*/
@@ -179,8 +227,102 @@ h6 {
   margin-left: 50px;
 }
 
+.header-top .header-widget p {
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.logo {
+  font-size: 25px;
+  font-weight: 800;
+  color: var(--white);
+}
+
 .main-header {
   padding: 0 60px;
-  background: #e37706;
+  background: var(--themeColor);
+}
+
+.main-header .nav-menu {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.main-header .nav-menu li {
+  margin-right: 50px;
+}
+
+.main-header .nav-item .nav-link {
+  color: var(--white);
+}
+
+/* ---------------
+     04. Hero style
+ ------------------*/
+.hero-area {
+  padding: 100px 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-content h4 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--themeColor);
+  margin-bottom: 15px;
+  line-height: 155.2%;
+}
+
+.hero-content h2 {
+  font-size: 50px;
+  line-height: 155.2%;
+  margin-bottom: 25px;
+  font-weight: 700;
+  width: 90%;
+}
+
+.hero-content p {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 50px;
+  line-height: 200%;
+  width: 90%;
+}
+
+.bg-shape .shape-1 {
+  width: 100%;
+  position: absolute;
+  bottom: -180px;
+  z-index: -1;
+  left: 0;
+}
+
+.bg-shape .shape-1 img {
+  width: 100%;
+}
+
+.bg-shape .shape-2 {
+  position: absolute;
+  width: 100%;
+  bottom: -200px;
+  right: -260px;
+  z-index: -2;
+}
+
+.bg-shape .shape-2 img {
+  width: 100%;
+}
+
+/* ---------------
+    04. Footer style
+------------------*/
+.footer-area {
+  background: #1b1b1b;
+  color: #fff;
+}
+
+.footer-top {
+  padding: 80px 0 60px 0;
 }
 /*# sourceMappingURL=style.css.map */

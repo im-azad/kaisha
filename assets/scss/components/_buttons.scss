@@ -1,0 +1,25 @@
+.btn {
+	height: 50px;
+	line-height: 50px;
+	font-size: 16px;
+	font-weight: 500;
+	color: var(--white);
+	background: var(--themeColor);
+	padding: 0 30px;
+	border-radius: 0;
+	border: 2px solid var(--themeColor);
+	transition: 0.3s;
+	cursor: pointer;
+	&:hover {
+		color: var(--themeColor);
+		background: transparent;
+	}
+	&.btn-white {
+		background: var(--white);
+		color: var(--themeColor);
+		border-radius: 6px;
+	}
+	&.btn-round {
+		border-radius: 40px;
+	}
+}

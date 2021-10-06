@@ -11,10 +11,30 @@
 				margin-left: 50px;
 			}
 		}
+		p {
+			font-size: 12px;
+			font-weight: 600;
+		}
 	}
 }
-
+.logo {
+	font-size: 25px;
+	font-weight: 800;
+	color: var(--white);
+}
 .main-header {
 	padding: 0 60px;
-	background: #e37706;
+	background: var(--themeColor);
+
+	.nav-menu {
+		justify-content: flex-end;
+		li {
+			margin-right: 50px;
+		}
+	}
+	.nav-item {
+		.nav-link {
+			color: var(--white);
+		}
+	}
 }
